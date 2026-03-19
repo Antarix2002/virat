@@ -678,6 +678,7 @@ src="https://www.facebook.com/tr?id=940957208419670&ev=PageView&noscript=1"
     transform: translateX(-50%);
     width: 100%;
     display: flex;
+    justify-content: center; /* ✅ center horizontally */
 }
 
 /* 📱 Mobile */
@@ -690,14 +691,9 @@ src="https://www.facebook.com/tr?id=940957208419670&ev=PageView&noscript=1"
 /* 💻 Desktop */
 @media (min-width: 768px) {
     .whatsapp-fixed {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    display: flex;
+        top: auto;
+    }
 }
-}
-
 
 .whatsapp-btn {
   display: flex;
