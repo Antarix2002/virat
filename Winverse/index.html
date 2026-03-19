@@ -672,26 +672,21 @@ src="https://www.facebook.com/tr?id=940957208419670&ev=PageView&noscript=1"
           transform: rotate(360deg);
         }
       }
+/* Base (works everywhere) */
 .whatsapp-fixed {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     display: flex;
-    justify-content: center; /* ✅ center horizontally */
+    justify-content: center; /* center on all devices */
+    top: 500px; /* default for mobile/tablet */
 }
 
-/* 📱 Mobile */
-@media (max-width: 767px) {
+/* Desktop only */
+@media (min-width: 992px) {
     .whatsapp-fixed {
-        top: 500px;
-    }
-}
-
-/* 💻 Desktop */
-@media (min-width: 768px) {
-    .whatsapp-fixed {
-        top: auto;
+        top: auto; /* remove top on larger screens */
     }
 }
 
