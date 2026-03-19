@@ -674,14 +674,25 @@ src="https://www.facebook.com/tr?id=940957208419670&ev=PageView&noscript=1"
       }
 
  .whatsapp-fixed {
-  position: absolute;
-  top: 500px;              /* 👈 logo ke neeche control yahin se */
-  left: 50%;
-  transform: translateX(-50%);
-    width: 100%;             /* ✅ ADD THIS */
-  display: flex;           /* ✅ ADD */
-  justify-content: center; 
-  z-index: 10;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+}
+
+/* 📱 Mobile (default) */
+@media (max-width: 767px) {
+    .whatsapp-fixed {
+        top: 500px;
+    }
+}
+
+/* 💻 Desktop */
+@media (min-width: 768px) {
+    .whatsapp-fixed {
+        top: unset; /* or remove effect */
+    }
 }
 
 
