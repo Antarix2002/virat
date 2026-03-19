@@ -672,8 +672,7 @@ src="https://www.facebook.com/tr?id=940957208419670&ev=PageView&noscript=1"
           transform: rotate(360deg);
         }
       }
-
- .whatsapp-fixed {
+.whatsapp-fixed {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -681,7 +680,7 @@ src="https://www.facebook.com/tr?id=940957208419670&ev=PageView&noscript=1"
     display: flex;
 }
 
-/* 📱 Mobile (default) */
+/* 📱 Mobile */
 @media (max-width: 767px) {
     .whatsapp-fixed {
         top: 500px;
@@ -691,8 +690,12 @@ src="https://www.facebook.com/tr?id=940957208419670&ev=PageView&noscript=1"
 /* 💻 Desktop */
 @media (min-width: 768px) {
     .whatsapp-fixed {
-        top: unset; /* or remove effect */
-    }
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+}
 }
 
 
